@@ -5,6 +5,7 @@ import {faUsers,
         faChessBoard,
         faChartLine,
         faGlobe,
+        faArrowLeft,
 } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -14,4 +15,5 @@ library.add(
     faChessBoard,
     faChartLine,
     faGlobe,
+    faArrowLeft,
 )

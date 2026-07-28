@@ -15,7 +15,9 @@
                 <font-awesome-icon icon = "chess-board"/><span v-if="!collapsed"> Runden</span>
             </RouterLink>
 
-            <RouterLink to = "/players">
+            <RouterLink to = "/players"
+            :class="{active:isActive('/players')}"
+>
                 <font-awesome-icon icon="users" /><span v-if="!collapsed"> Spieler</span>
             </RouterLink>
 
@@ -28,6 +30,15 @@
 </template>
 
 <script setup lang="ts">
+
+import { useRoute } from "vue-router"
+
+const route = useRoute()
+
+function isActive(path){
+    return route.path.startsWith(path)
+}
+
 defineProps<{
     collapsed : boolean
 }>()
@@ -44,7 +55,7 @@ const emit = defineEmits<{
   min-height: 100vh;
   padding: 2rem;
   background-color: #20262E;
-  transition: width .3s ease;
+  transition: width .2s ease;
   overflow: hidden;
 }
 
@@ -104,7 +115,7 @@ nav a:not(.router-link-exact-active):hover {
   background-color: #3A4352;
 }
 
-.router-link-exact-active {
+.router-link-exact-active, .active {
 
     background-color: #238017;
 

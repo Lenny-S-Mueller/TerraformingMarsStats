@@ -30,6 +30,7 @@ const sidebarCollapsed = ref(false)
 .content {
   flex: 1;
   padding: 2rem;
+  min-width: 0;
 }
 
 </style>

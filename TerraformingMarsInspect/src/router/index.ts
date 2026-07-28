@@ -5,6 +5,7 @@ import GamesView from "@/views/GamesView.vue"
 import PlayersView from "@/views/PlayersView.vue"
 import FactionsView from "@/views/FactionsView.vue"
 import AppLayout from "@/layouts/AppLayout.vue"
+import PlayerDetailView from "@/views/PlayerDetailView.vue"
 
 const router = createRouter({
   history : createWebHistory(import.meta.env.BASE_URL),
@@ -37,6 +38,10 @@ const router = createRouter({
           component: FactionsView,
         
         },
+        {
+          path: 'players/:name',
+          component: PlayerDetailView
+        }
       ]
     },
     
