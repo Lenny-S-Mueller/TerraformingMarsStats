@@ -36,7 +36,7 @@ const showFaction = ref(false)
 
 onMounted(async () => {
 
-    const res = await fetch("http://localhost:8000/factions")
+    const res = await fetch("/data/factions.json")
 
     factions.value = await res.json()
 

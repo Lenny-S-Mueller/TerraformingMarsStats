@@ -1,0 +1,197 @@
+{
+  "player": {
+    "id": 2,
+    "player": "Lars",
+    "games": 9,
+    "wins": 0,
+    "ratio": 0.0,
+    "avg_performance": 0.834,
+    "current_elo": 786,
+    "elo_rank": 5,
+    "games_rank": 5,
+    "wins_rank": 5,
+    "win_rate_rank": 5,
+    "perf_rank": 5
+  },
+  "elo": [
+    {
+      "date": "09.10.2025",
+      "elo": 973
+    },
+    {
+      "date": "06.11.2025",
+      "elo": 944
+    },
+    {
+      "date": "13.11.2025",
+      "elo": 944
+    },
+    {
+      "date": "04.12.2025",
+      "elo": 944
+    },
+    {
+      "date": "18.12.2025",
+      "elo": 944
+    },
+    {
+      "date": "15.01.2026",
+      "elo": 944
+    },
+    {
+      "date": "22.01.2026",
+      "elo": 944
+    },
+    {
+      "date": "29.01.2026",
+      "elo": 944
+    },
+    {
+      "date": "05.02.2026",
+      "elo": 944
+    },
+    {
+      "date": "19.02.2026",
+      "elo": 944
+    },
+    {
+      "date": "26.02.2026",
+      "elo": 944
+    },
+    {
+      "date": "19.03.2026",
+      "elo": 944
+    },
+    {
+      "date": "02.04.2026",
+      "elo": 944
+    },
+    {
+      "date": "16.04.2026",
+      "elo": 944
+    },
+    {
+      "date": "23.04.2026",
+      "elo": 918
+    },
+    {
+      "date": "30.04.2026",
+      "elo": 918
+    },
+    {
+      "date": "07.05.2026",
+      "elo": 893
+    },
+    {
+      "date": "27.05.2026",
+      "elo": 868
+    },
+    {
+      "date": "04.06.2026",
+      "elo": 863
+    },
+    {
+      "date": "11.06.2026",
+      "elo": 863
+    },
+    {
+      "date": "18.06.2026",
+      "elo": 863
+    },
+    {
+      "date": "25.06.2026",
+      "elo": 839
+    },
+    {
+      "date": "02.07.2026",
+      "elo": 813
+    },
+    {
+      "date": "09.07.2026",
+      "elo": 813
+    },
+    {
+      "date": "16.07.2026",
+      "elo": 786
+    }
+  ],
+  "factions": [
+    {
+      "faction": "inventrix",
+      "times_played": 2,
+      "wins": 0
+    },
+    {
+      "faction": "beginner",
+      "times_played": 2,
+      "wins": 0
+    },
+    {
+      "faction": "vitor",
+      "times_played": 1,
+      "wins": 0
+    },
+    {
+      "faction": "valleytrust",
+      "times_played": 1,
+      "wins": 0
+    },
+    {
+      "faction": "saturnsystems",
+      "times_played": 1,
+      "wins": 0
+    },
+    {
+      "faction": "credicor",
+      "times_played": 1,
+      "wins": 0
+    },
+    {
+      "faction": null,
+      "times_played": 1,
+      "wins": 0
+    }
+  ],
+  "h2h": [
+    {
+      "player": "Anton",
+      "Anton": 0.0,
+      "Lars": -17.0,
+      "Lenny": -2.0,
+      "Maik": 0.0,
+      "Matteo": -2.0
+    },
+    {
+      "player": "Lars",
+      "Anton": 17.0,
+      "Lars": 0.0,
+      "Lenny": 14.0,
+      "Maik": 23.0,
+      "Matteo": 16.0
+    },
+    {
+      "player": "Lenny",
+      "Anton": 2.0,
+      "Lars": -14.0,
+      "Lenny": 0.0,
+      "Maik": -1.0,
+      "Matteo": 5.0
+    },
+    {
+      "player": "Maik",
+      "Anton": 0.0,
+      "Lars": -23.0,
+      "Lenny": 1.0,
+      "Maik": 0.0,
+      "Matteo": -2.0
+    },
+    {
+      "player": "Matteo",
+      "Anton": 2.0,
+      "Lars": -16.0,
+      "Lenny": -5.0,
+      "Maik": 2.0,
+      "Matteo": 0.0
+    }
+  ]
+}

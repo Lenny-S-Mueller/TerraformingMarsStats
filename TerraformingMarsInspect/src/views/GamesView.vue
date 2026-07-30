@@ -11,7 +11,7 @@ const showGames = ref(false)
 
 onMounted(async () => {
 
-    const res = await fetch("http://127.0.0.1:8000/games")
+    const res = await fetch("/data/games.json")
 
     rows.value = await res.json()
 

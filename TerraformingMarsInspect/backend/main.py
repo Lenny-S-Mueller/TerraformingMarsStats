@@ -4,6 +4,8 @@ import sqlite3
 
 from statistics_db import get_connection, get_player_stats, get_elo_history, get_corporations, get_h2h
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 
 
 
@@ -14,17 +16,18 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173"
+        "*"
     ],
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-@app.get("/")
-def root():
-    return {
-        "message": "Backend läuft"
-    }
+# @app.get("/")
+# def root():
+#     return {
+#         "message": "Backend läuft"
+#     }
 
 @app.get("/players")
 def get_players():
@@ -124,3 +127,26 @@ def get_games():
     rows = cursor.fetchall()
 
     return rows
+
+@app.get("/test")
+def test():
+    return {
+        "status": "API funktioniert"
+    }
+
+for route in app.routes:
+    print(route.path)
+
+## App ausliefern
+
+app.mount(
+    "/assets",
+    StaticFiles(directory="dist/assets"),
+    name="assets"
+)
+
+
+@app.get("/{full_path:path}")
+def serve_vue(full_path: str):
+
+    return FileResponse("dist/index.html")

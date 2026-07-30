@@ -1,0 +1,217 @@
+{
+  "player": {
+    "id": 3,
+    "player": "Lenny",
+    "games": 23,
+    "wins": 8,
+    "ratio": 0.348,
+    "avg_performance": 1.034,
+    "current_elo": 1066,
+    "elo_rank": 1,
+    "games_rank": 2,
+    "wins_rank": 1,
+    "win_rate_rank": 1,
+    "perf_rank": 1
+  },
+  "elo": [
+    {
+      "date": "09.10.2025",
+      "elo": 993
+    },
+    {
+      "date": "06.11.2025",
+      "elo": 979
+    },
+    {
+      "date": "13.11.2025",
+      "elo": 953
+    },
+    {
+      "date": "04.12.2025",
+      "elo": 981
+    },
+    {
+      "date": "18.12.2025",
+      "elo": 981
+    },
+    {
+      "date": "15.01.2026",
+      "elo": 981
+    },
+    {
+      "date": "22.01.2026",
+      "elo": 981
+    },
+    {
+      "date": "29.01.2026",
+      "elo": 1014
+    },
+    {
+      "date": "05.02.2026",
+      "elo": 1013
+    },
+    {
+      "date": "19.02.2026",
+      "elo": 1036
+    },
+    {
+      "date": "26.02.2026",
+      "elo": 1035
+    },
+    {
+      "date": "19.03.2026",
+      "elo": 1060
+    },
+    {
+      "date": "02.04.2026",
+      "elo": 1033
+    },
+    {
+      "date": "16.04.2026",
+      "elo": 1070
+    },
+    {
+      "date": "23.04.2026",
+      "elo": 1058
+    },
+    {
+      "date": "30.04.2026",
+      "elo": 1032
+    },
+    {
+      "date": "07.05.2026",
+      "elo": 1063
+    },
+    {
+      "date": "27.05.2026",
+      "elo": 1062
+    },
+    {
+      "date": "04.06.2026",
+      "elo": 1083
+    },
+    {
+      "date": "11.06.2026",
+      "elo": 1081
+    },
+    {
+      "date": "18.06.2026",
+      "elo": 1050
+    },
+    {
+      "date": "25.06.2026",
+      "elo": 1041
+    },
+    {
+      "date": "02.07.2026",
+      "elo": 1041
+    },
+    {
+      "date": "09.07.2026",
+      "elo": 1067
+    },
+    {
+      "date": "16.07.2026",
+      "elo": 1066
+    }
+  ],
+  "factions": [
+    {
+      "faction": "beginner",
+      "times_played": 9,
+      "wins": 4
+    },
+    {
+      "faction": null,
+      "times_played": 3,
+      "wins": 1
+    },
+    {
+      "faction": "inventrix",
+      "times_played": 2,
+      "wins": 0
+    },
+    {
+      "faction": "credicor",
+      "times_played": 2,
+      "wins": 1
+    },
+    {
+      "faction": "unitedmarsinitiative",
+      "times_played": 1,
+      "wins": 0
+    },
+    {
+      "faction": "thorgate",
+      "times_played": 1,
+      "wins": 1
+    },
+    {
+      "faction": "tharsisrepublic",
+      "times_played": 1,
+      "wins": 1
+    },
+    {
+      "faction": "stormcraft",
+      "times_played": 1,
+      "wins": 0
+    },
+    {
+      "faction": "polyphemos",
+      "times_played": 1,
+      "wins": 0
+    },
+    {
+      "faction": "phobolog",
+      "times_played": 1,
+      "wins": 0
+    },
+    {
+      "faction": "ecoline",
+      "times_played": 1,
+      "wins": 0
+    }
+  ],
+  "h2h": [
+    {
+      "player": "Anton",
+      "Anton": 0.0,
+      "Lars": -17.0,
+      "Lenny": -2.0,
+      "Maik": 0.0,
+      "Matteo": -2.0
+    },
+    {
+      "player": "Lars",
+      "Anton": 17.0,
+      "Lars": 0.0,
+      "Lenny": 14.0,
+      "Maik": 23.0,
+      "Matteo": 16.0
+    },
+    {
+      "player": "Lenny",
+      "Anton": 2.0,
+      "Lars": -14.0,
+      "Lenny": 0.0,
+      "Maik": -1.0,
+      "Matteo": 5.0
+    },
+    {
+      "player": "Maik",
+      "Anton": 0.0,
+      "Lars": -23.0,
+      "Lenny": 1.0,
+      "Maik": 0.0,
+      "Matteo": -2.0
+    },
+    {
+      "player": "Matteo",
+      "Anton": 2.0,
+      "Lars": -16.0,
+      "Lenny": -5.0,
+      "Maik": 2.0,
+      "Matteo": 0.0
+    }
+  ]
+}

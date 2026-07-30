@@ -72,7 +72,7 @@ onMounted(async () => {
 
 
     const response = await fetch(
-        `http://127.0.0.1:8000/players/${name}`
+        `/data/players/${name}.json`
     )
 
 

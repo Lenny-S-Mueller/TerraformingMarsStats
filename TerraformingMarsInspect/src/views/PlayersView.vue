@@ -12,7 +12,7 @@ const players = ref([])
 const showPlayers = ref(false)
 
 onMounted(async () => {
-    const response = await fetch("http://localhost:8000/players")
+    const response = await fetch("/data/players.json")
     players.value = await response.json()
 
     showPlayers.value = true
