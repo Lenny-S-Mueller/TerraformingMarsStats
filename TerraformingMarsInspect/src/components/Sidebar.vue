@@ -7,9 +7,9 @@
         </h2>
         
         <nav>
-            <RouterLink to = "/dashboard">
+            <!-- <RouterLink to = "/dashboard">
                 <font-awesome-icon icon = "chart-line"/><span v-if="!collapsed"> Übersicht</span>
-            </RouterLink>
+            </RouterLink> -->
             
             <RouterLink to = "/games">
                 <font-awesome-icon icon = "chess-board"/><span v-if="!collapsed"> Runden</span>

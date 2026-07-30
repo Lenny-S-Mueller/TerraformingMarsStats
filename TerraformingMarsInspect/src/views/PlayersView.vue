@@ -38,7 +38,7 @@ onMounted(async () => {
       v-for="(player, index) in (showPlayers ? players : [])"
       :key="player.player"
       :player="player"
-      :style="{ '--delay': `${index * 100}ms` }"
+      :style="{ '--delay': `${index * 50}ms` }"
     />
   </TransitionGroup>
 </template>

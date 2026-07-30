@@ -151,6 +151,17 @@ dates = []
 for sheet in df:
     dates.append(sheet)
 
+faction_stats = []
+for i, faction in enumerate(fac_list): 
+    facnum = 0
+    for player in players:
+        if faction in players[player].played_factions:
+            facnum += players[player].played_factions[faction]
+    faction_stats.append([faction, facnum, int(faction_wins[i])])
+fac_df = pd.DataFrame(faction_stats, columns=['faction', 'games', 'wins'])
+            
+
+
 dataframe = []
 for i, name in enumerate(players):
     dataframe.append([i+1, players[name].name, players[name].games, players[name].wins, players[name].ratio, np.round(players[name].avg_perf, 3), players[name].elo[-1]])
@@ -177,6 +188,17 @@ for sheet in df:
 played_faction_df = pd.DataFrame(data = played_faction, columns=['date', 'player', 'faction', 'points', 'win'])
 
 fac_h2h_df = pd.DataFrame(data = fac_h2h, index = fac_list, columns=fac_list)
+
+games_list = {}
+for i, sheet in enumerate(df):
+    sheet_dict = {}
+    for j, player in enumerate(df[sheet]['players']):
+        sheet_dict[player] = df[sheet].iloc[j][1:]
+
+        
+    games_list['game_id'] = i
+    games_list['date'] = sheet
+    games_list['players'] = sheet_dict
 
 
 
@@ -218,6 +240,13 @@ fac_h2h_df.to_sql(
     if_exists="replace",
     index = True,
     index_label="faction"
+)
+
+fac_df.to_sql(
+    "faction_games",
+    connection,
+    if_exists='replace',
+    index = False
 )
 
 

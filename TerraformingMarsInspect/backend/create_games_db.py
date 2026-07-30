@@ -24,7 +24,7 @@ cursor = connection.cursor()
 # Tabellen erzeugen
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS games (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    game_id INTEGER PRIMARY KEY,
     date TEXT NOT NULL
 )
 """)
@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS game_players (
 excel = pd.ExcelFile(EXCEL_FILE)
 
 
-for sheet in excel.sheet_names:
+for i, sheet in enumerate(excel.sheet_names):
 
     print(f"Importiere Spiel {sheet}")
 
@@ -76,10 +76,10 @@ for sheet in excel.sheet_names:
     # Spiel anlegen
     cursor.execute(
         """
-        INSERT INTO games(date)
-        VALUES (?)
+        INSERT INTO games(game_id, date)
+        VALUES (?, ?)
         """,
-        (sheet,)
+        (i, sheet,)
     )
 
 

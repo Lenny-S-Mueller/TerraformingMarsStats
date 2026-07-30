@@ -1,64 +1,128 @@
 <script setup lang="ts">
 
-import GameCard from '@/components/GameCard.vue'
-import { games } from '@/data/games'
+import { ref, computed, onMounted } from "vue"
+import GameCard from "@/components/GameCard.vue"
 
-import { ref, onMounted } from 'vue'
+
+const rows = ref<any[]>([])
 
 const showGames = ref(false)
 
-onMounted(() => {
-  showGames.value = true
+
+onMounted(async () => {
+
+    const res = await fetch("http://127.0.0.1:8000/games")
+
+    rows.value = await res.json()
+
+    showGames.value = true
+
+})
+
+
+
+const games = computed(() => {
+
+    const grouped: Record<number, any> = {}
+
+    rows.value.forEach(row => {
+
+        if (!grouped[row.game_id]) {
+
+            grouped[row.game_id] = {
+                game_id: row.game_id,
+                date: row.date,
+                players: []
+            }
+
+        }
+
+
+        grouped[row.game_id].players.push({
+
+            player: row.player,
+            faction: row.faction,
+
+            tf_rating: row.tf_rating,
+            awards: row.awards,
+            milestones: row.milestones,
+
+            greenery: row.greenery,
+            city: row.city,
+
+            victory_points: row.victory_points,
+
+            total: row.total,
+            money: row.money
+
+        })
+
+    })
+
+
+    return Object.values(grouped)
+            .sort((a, b) => {
+                return b.game_id - a.game_id
+            })
+
 })
 
 </script>
 
 <template>
-  <h2>Rundenübersicht</h2>
-  <TransitionGroup name="games" tag="div" class="game-grid">
-  
-    <GameCard v-for="(game, index) in (showGames ? games : [])"
-    :style="{ '--delay': `${index * 120}ms` }"
-    :key="game.date"
-    :game="game"/>
-  
+<div>
+
+    <TransitionGroup
+    name="game"
+    tag="div"
+    class="games-container"
+  >
+    <GameCard
+      v-for="(game, index) in (showGames ? games : [])"
+      :key="game.game_id"
+      :game="game"
+      :style="{ '--delay': `${index * 50}ms` }"
+    />
   </TransitionGroup>
+</div>
 
 </template>
 
 
-<style>
 
-.game-grid {
 
-    width: 100%;
-  
-    display: flex;
 
-    flex-direction: column;
+<style scoped>
 
-    /* grid-template-columns: repeat(1, 100%); */
+.games-container {
 
-    gap: 1.5rem;
+    width:100%;
 
-    margin-top: 1.5rem;
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1.2rem;
+
+    padding:2rem;
 
 }
 
-.games-enter-active {
+.game-enter-active {
     transition: all .35s ease;
 
     transition-delay: var(--delay);
 }
 
-.games-enter-from {
+.game-enter-from {
     opacity: 0;
     transform: scale(.95);
 }
 
-.games-enter-to {
+.game-enter-to {
     opacity: 1;
     transform: scale(1);
 }
+
 
 </style>

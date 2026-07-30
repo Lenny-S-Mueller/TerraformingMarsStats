@@ -32,9 +32,9 @@
 
 
             <div class = 'card'>
-                <h3>
+                <!-- <h3>
                     Head-to-Head Spielervergleich:
-                </h3>
+                </h3> -->
             <H2HMatrix
                 v-if="player"
                 :current-player="player?.player.player"

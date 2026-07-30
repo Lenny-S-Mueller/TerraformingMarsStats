@@ -7,7 +7,7 @@
             <thead>
                 <tr>
 
-                    <th></th>
+                    <th>H2H</th>
 
                     <th
                         v-for="player in players"
@@ -157,6 +157,8 @@ function formatValue(
 
     width: 100%;
 
+    font-size: 1.1rem;
+
 }
 
 
@@ -164,7 +166,7 @@ function formatValue(
 th,
 td {
 
-    padding: 0.7rem;
+    padding: 0.6rem;
 
     text-align: center;
 
@@ -178,6 +180,7 @@ td {
 
     background-color: var(--player-color);
 
+    font-size: 1.25rem;
 
     font-weight: bold;
 
