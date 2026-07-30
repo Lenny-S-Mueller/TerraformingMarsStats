@@ -1,0 +1,132 @@
+[
+  {
+    "faction": "beginner",
+    "games": 20,
+    "wins": 8
+  },
+  {
+    "faction": "valleytrust",
+    "games": 5,
+    "wins": 1
+  },
+  {
+    "faction": "tharsisrepublic",
+    "games": 5,
+    "wins": 2
+  },
+  {
+    "faction": "ecoline",
+    "games": 5,
+    "wins": 0
+  },
+  {
+    "faction": "saturnsystems",
+    "games": 4,
+    "wins": 1
+  },
+  {
+    "faction": "inventrix",
+    "games": 4,
+    "wins": 0
+  },
+  {
+    "faction": "helion",
+    "games": 4,
+    "wins": 1
+  },
+  {
+    "faction": "credicor",
+    "games": 4,
+    "wins": 1
+  },
+  {
+    "faction": "poseidon",
+    "games": 3,
+    "wins": 0
+  },
+  {
+    "faction": "phobolog",
+    "games": 3,
+    "wins": 0
+  },
+  {
+    "faction": "astrodrill",
+    "games": 3,
+    "wins": 1
+  },
+  {
+    "faction": "arklight",
+    "games": 3,
+    "wins": 0
+  },
+  {
+    "faction": "vitor",
+    "games": 2,
+    "wins": 1
+  },
+  {
+    "faction": "unitedmarsinitiative",
+    "games": 2,
+    "wins": 1
+  },
+  {
+    "faction": "thorgate",
+    "games": 2,
+    "wins": 1
+  },
+  {
+    "faction": "teractor",
+    "games": 2,
+    "wins": 1
+  },
+  {
+    "faction": "stormcraft",
+    "games": 2,
+    "wins": 0
+  },
+  {
+    "faction": "polyphemos",
+    "games": 2,
+    "wins": 0
+  },
+  {
+    "faction": "cheungshing",
+    "games": 2,
+    "wins": 1
+  },
+  {
+    "faction": "splice",
+    "games": 1,
+    "wins": 1
+  },
+  {
+    "faction": "recyclon",
+    "games": 1,
+    "wins": 0
+  },
+  {
+    "faction": "pointluna",
+    "games": 1,
+    "wins": 0
+  },
+  {
+    "faction": "pharmacy",
+    "games": 1,
+    "wins": 0
+  },
+  {
+    "faction": "interplanetary",
+    "games": 1,
+    "wins": 1
+  },
+  {
+    "faction": "aridor",
+    "games": 1,
+    "wins": 0
+  },
+  {
+    "faction": "arcadia",
+    "games": 1,
+    "wins": 1
+  }
+]
