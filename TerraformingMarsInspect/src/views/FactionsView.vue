@@ -36,7 +36,7 @@ const showFaction = ref(false)
 
 onMounted(async () => {
 
-    const res = await fetch("/data/factions.json")
+    const res = await fetch(`${import.meta.env.BASE_URL}/data/factions.json`)
 
     factions.value = await res.json()
 

@@ -11,7 +11,7 @@ const showGames = ref(false)
 
 onMounted(async () => {
 
-    const res = await fetch("/data/games.json")
+    const res = await fetch(`${import.meta.env.BASE_URL}/data/games.json`)
 
     rows.value = await res.json()
 

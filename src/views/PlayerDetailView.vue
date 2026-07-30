@@ -72,7 +72,7 @@ onMounted(async () => {
 
 
     const response = await fetch(
-        `/data/players/${name}.json`
+        `${import.meta.env.BASE_URL}/data/players/${name}.json`
     )
 
 
