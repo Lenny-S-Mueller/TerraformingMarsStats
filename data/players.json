@@ -2,29 +2,29 @@
   {
     "id": 1,
     "player": "Anton",
-    "games": 23,
+    "games": 24,
     "wins": 7,
-    "ratio": 0.304,
-    "avg_performance": 1.009,
-    "current_elo": 1054
+    "ratio": 0.292,
+    "avg_performance": 1.01,
+    "current_elo": 1046
   },
   {
     "id": 2,
     "player": "Lars",
-    "games": 9,
+    "games": 10,
     "wins": 0,
     "ratio": 0.0,
-    "avg_performance": 0.834,
-    "current_elo": 786
+    "avg_performance": 0.832,
+    "current_elo": 761
   },
   {
     "id": 3,
     "player": "Lenny",
-    "games": 23,
+    "games": 24,
     "wins": 8,
-    "ratio": 0.348,
-    "avg_performance": 1.034,
-    "current_elo": 1066
+    "ratio": 0.333,
+    "avg_performance": 1.035,
+    "current_elo": 1071
   },
   {
     "id": 4,
@@ -38,10 +38,10 @@
   {
     "id": 5,
     "player": "Matteo",
-    "games": 13,
-    "wins": 4,
-    "ratio": 0.308,
-    "avg_performance": 1.024,
-    "current_elo": 1046
+    "games": 14,
+    "wins": 5,
+    "ratio": 0.357,
+    "avg_performance": 1.03,
+    "current_elo": 1068
   }
 ]
