@@ -2,12 +2,12 @@
   "player": {
     "id": 1,
     "player": "Anton",
-    "games": 23,
+    "games": 24,
     "wins": 7,
-    "ratio": 0.304,
-    "avg_performance": 1.009,
-    "current_elo": 1054,
-    "elo_rank": 2,
+    "ratio": 0.292,
+    "avg_performance": 1.01,
+    "current_elo": 1046,
+    "elo_rank": 3,
     "games_rank": 2,
     "wins_rank": 2,
     "win_rate_rank": 3,
@@ -113,6 +113,10 @@
     {
       "date": "16.07.2026",
       "elo": 1054
+    },
+    {
+      "date": "03.09.2026",
+      "elo": 1046
     }
   ],
   "factions": [
@@ -120,6 +124,11 @@
       "faction": "beginner",
       "times_played": 7,
       "wins": 3
+    },
+    {
+      "faction": "splice",
+      "times_played": 2,
+      "wins": 1
     },
     {
       "faction": "phobolog",
@@ -157,11 +166,6 @@
       "wins": 0
     },
     {
-      "faction": "splice",
-      "times_played": 1,
-      "wins": 1
-    },
-    {
       "faction": "polyphemos",
       "times_played": 1,
       "wins": 0
@@ -191,26 +195,26 @@
     {
       "player": "Anton",
       "Anton": 0.0,
-      "Lars": -17.0,
-      "Lenny": -2.0,
+      "Lars": -18.0,
+      "Lenny": -1.0,
       "Maik": 0.0,
-      "Matteo": -2.0
+      "Matteo": 0.0
     },
     {
       "player": "Lars",
-      "Anton": 17.0,
+      "Anton": 18.0,
       "Lars": 0.0,
-      "Lenny": 14.0,
+      "Lenny": 16.0,
       "Maik": 23.0,
-      "Matteo": 16.0
+      "Matteo": 19.0
     },
     {
       "player": "Lenny",
-      "Anton": 2.0,
-      "Lars": -14.0,
+      "Anton": 1.0,
+      "Lars": -16.0,
       "Lenny": 0.0,
       "Maik": -1.0,
-      "Matteo": 5.0
+      "Matteo": 6.0
     },
     {
       "player": "Maik",
@@ -222,9 +226,9 @@
     },
     {
       "player": "Matteo",
-      "Anton": 2.0,
-      "Lars": -16.0,
-      "Lenny": -5.0,
+      "Anton": 0.0,
+      "Lars": -19.0,
+      "Lenny": -6.0,
       "Maik": 2.0,
       "Matteo": 0.0
     }

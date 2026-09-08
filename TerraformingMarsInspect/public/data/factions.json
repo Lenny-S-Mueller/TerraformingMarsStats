@@ -15,6 +15,11 @@
     "wins": 2
   },
   {
+    "faction": "helion",
+    "games": 5,
+    "wins": 2
+  },
+  {
     "faction": "ecoline",
     "games": 5,
     "wins": 0
@@ -30,14 +35,14 @@
     "wins": 0
   },
   {
-    "faction": "helion",
+    "faction": "credicor",
     "games": 4,
     "wins": 1
   },
   {
-    "faction": "credicor",
+    "faction": "arklight",
     "games": 4,
-    "wins": 1
+    "wins": 0
   },
   {
     "faction": "poseidon",
@@ -53,11 +58,6 @@
     "faction": "astrodrill",
     "games": 3,
     "wins": 1
-  },
-  {
-    "faction": "arklight",
-    "games": 3,
-    "wins": 0
   },
   {
     "faction": "vitor",
@@ -85,7 +85,17 @@
     "wins": 0
   },
   {
+    "faction": "splice",
+    "games": 2,
+    "wins": 1
+  },
+  {
     "faction": "polyphemos",
+    "games": 2,
+    "wins": 0
+  },
+  {
+    "faction": "pointluna",
     "games": 2,
     "wins": 0
   },
@@ -95,17 +105,7 @@
     "wins": 1
   },
   {
-    "faction": "splice",
-    "games": 1,
-    "wins": 1
-  },
-  {
     "faction": "recyclon",
-    "games": 1,
-    "wins": 0
-  },
-  {
-    "faction": "pointluna",
     "games": 1,
     "wins": 0
   },
