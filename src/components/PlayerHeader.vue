@@ -76,7 +76,7 @@
         </span>
 
         <strong>
-            {{ player.ratio * 100}}%
+            {{ (player.ratio * 100).toFixed(1)}}%
         </strong>
 
         <small>

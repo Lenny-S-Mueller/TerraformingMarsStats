@@ -24,7 +24,7 @@
 
         <p>
             Winrate:
-            {{ player.ratio  * 100}}%
+            {{ (player.ratio  * 100).toFixed(1)}}%
         </p>
 
     </div>
